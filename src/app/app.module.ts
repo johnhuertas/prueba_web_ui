@@ -3,10 +3,8 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClientModule } from '@angular/common/http';
-import {MatTableModule} from '@angular/material/table';
-import { FlexLayoutModule } from '@angular/flex-layout';
-
-
+import { MaterialModule } from './utilidades/material.module';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -16,8 +14,9 @@ import { FlexLayoutModule } from '@angular/flex-layout';
     BrowserModule,
     NoopAnimationsModule,
     HttpClientModule,
-    MatTableModule,
-    FlexLayoutModule
+    MaterialModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
