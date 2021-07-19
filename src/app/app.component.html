@@ -11,7 +11,7 @@
                     <mat-label>Número de identidad</mat-label>
                     <input matInput onpaste="return false" placeholder="Ingrese # de cc" formControlName="ID" required
                     onkeypress="return event.charCode >= 48 && event.charCode <= 57 || event.charCode <= 8 || event.charCode == 13 "
-                    maxlength="4" autocomplete="off">
+                    maxlength="10" autocomplete="off">
                 </mat-form-field>
             </div>
             <div fxFlex="20" fxLayout="column" fxLayoutAlign="start start" fxLayoutGap="gappx">
@@ -31,7 +31,7 @@
                     <mat-label>Número de cc de jefe</mat-label>
                     <input matInput onpaste="return false" placeholder="Ingrese # de cc" formControlName="JEFE" required
                     onkeypress="return event.charCode >= 48 && event.charCode <= 57 || event.charCode <= 8 || event.charCode == 13 "
-                    maxlength="4" autocomplete="off">
+                    maxlength="10" autocomplete="off">
                 </mat-form-field>
             </div>
         </div>
