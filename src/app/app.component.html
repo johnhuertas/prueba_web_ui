@@ -9,25 +9,29 @@
             <div fxFlex="20" fxLayout="column" fxLayoutAlign="start start" fxLayoutGap="gappx">
                 <mat-form-field appearance="outline">
                     <mat-label>Número de identidad</mat-label>
-                    <input matInput placeholder="Ingrese # de cc" formControlName="ID" required>
+                    <input matInput onpaste="return false" placeholder="Ingrese # de cc" formControlName="ID" required
+                    onkeypress="return event.charCode >= 48 && event.charCode <= 57 || event.charCode <= 8 || event.charCode == 13 "
+                    maxlength="4" autocomplete="off">
                 </mat-form-field>
             </div>
             <div fxFlex="20" fxLayout="column" fxLayoutAlign="start start" fxLayoutGap="gappx">
                 <mat-form-field appearance="outline">
                     <mat-label>Nombre de empleado</mat-label>
-                    <input matInput placeholder="Pepito Perez" formControlName="NOMBRE" required>
+                    <input matInput placeholder="Pepito Perez" formControlName="NOMBRE" required autocomplete="off">
                 </mat-form-field>
             </div>
             <div fxFlex="20" fxLayout="column" fxLayoutAlign="start start" fxLayoutGap="gappx">
                 <mat-form-field appearance="outline">
                     <mat-label>Cargo</mat-label>
-                    <input matInput placeholder="Test, Develop, etc" formControlName="CARGO" required>
+                    <input matInput placeholder="Test, Develop, etc" formControlName="CARGO" required autocomplete="off">
                 </mat-form-field>
             </div>
             <div fxFlex="20" fxLayout="column" fxLayoutAlign="start start" fxLayoutGap="gappx">
                 <mat-form-field appearance="outline">
                     <mat-label>Número de cc de jefe</mat-label>
-                    <input matInput placeholder="Ingrese # de cc" formControlName="JEFE" required>
+                    <input matInput onpaste="return false" placeholder="Ingrese # de cc" formControlName="JEFE" required
+                    onkeypress="return event.charCode >= 48 && event.charCode <= 57 || event.charCode <= 8 || event.charCode == 13 "
+                    maxlength="4" autocomplete="off">
                 </mat-form-field>
             </div>
         </div>
