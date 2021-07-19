@@ -12,14 +12,19 @@ export class EmpleadosService {
     constructor(private http: HttpClient) { }
 
     crearEmpleado(body: any): Observable<any> {
-        const url = URL_API;
+        const url = URL_API+'/crear';
         return this.http.post<any>(url, body);
     }
 
     consultarEmpleados(): Observable<any> {
-        const url = URL_API;
+        const url = URL_API+'/consultar';
         return this.http.get(url);
-      }
+    }
+
+    crearTabla(): Observable<any> {
+        const url = URL_API+'/crearTabla';
+        return this.http.get(url);
+    }
 
 
 }
